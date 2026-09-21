@@ -4,3 +4,4 @@ err.log
 run.log
 run_local.log
 __pycache__/
+.aider*

@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <title>BELENTANI UNIFIED</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BELENTANI · UNIFIED</title>
+<style>
+:root{--bg:#07080d;--fg:#ece9ff;--accent:#7c5cff;--card:#12141f;--muted:#8b8fb0}
+*{box-sizing:border-box}
+body{margin:0;font:16px/1.6 system-ui,Segoe UI,sans-serif;background:radial-gradient(1200px 600px at 50% -10%,#1a1140,var(--bg));color:var(--fg);min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:80px 24px}
+.hero h1{font-size:clamp(38px,7vw,72px);margin:0;letter-spacing:-.03em;background:linear-gradient(90deg,#fff,#9d84ff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{color:var(--muted);font-size:18px;margin:.5rem 0 2.5rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:16px;margin-bottom:2.5rem}
+.card{background:var(--card);border:1px solid #232640;border-radius:16px;padding:20px}
+.card b{display:block;font-size:32px;color:var(--accent);font-variant-numeric:tabular-nums}
+.card span{font-size:13px;color:var(--muted)}
+.cta{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:14px 28px;border-radius:12px}
+.cta:hover{filter:brightness(1.15)}
+footer{margin-top:60px;color:var(--muted);font-size:13px;border-top:1px solid #1c1f33;padding-top:20px}
+</style>
 </head>
 <body>
-  <!-- UNIFIED:START -->
-  <!-- Aider completará aquí la landing unificada del ecosistema Belentani -->
-  <!-- UNIFIED:END -->
+<div class="wrap">
+  <div class="hero">
+    <h1>BELENTANI UNIFIED</h1>
+    <p>Portal único del ecosistema: HTML deduplicados por hash sha256, listos para explorar.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><b>5845</b><span>HTML únicos</span></div>
+    <div class="card"><b>5160</b><span>grupos duplicados</span></div>
+    <div class="card"><b>11304</b><span>HTML encontrados</span></div>
+    <div class="card"><b>1412 MB</b><span>tamaño único</span></div>
+  </div>
+  <a class="cta" href="index.html">Abrir portal completo &rarr;</a>
+  <footer>
+    Origen: Documents + Desktop · dedupe sha256 · generado 2026-09-21<br>
+    Nota: Drive y bookmarks fuera de alcance por espacio de disco (&lt;5 GB libres).
+  </footer>
+</div>
 </body>
 </html>
